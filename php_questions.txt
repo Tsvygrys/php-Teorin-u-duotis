@@ -1,0 +1,117 @@
+Atsakymus pateikite po klausimu.
+
+1. Parašykite 1 būdą, kaip įvykdyti (paleisti) PHP script'ą iš komandinės eilutės.
+php failui paleisti naudojame komanda 'php -f'
+2. Kas privalo būti PHP failo pirmoje eilutėje, kad PHP žinotų, jog tolesnės eilutės yra PHP kodas?
+<?php
+3. Kokiais simboliais gali prasidėti PHP kintamojo pavadinimas (po $)?
+Raidėmis
+4. Ar simbolis % gali būti naudojamas PHP kintamojo pavadinime?
+Ne
+5. Parašykite multiline PHP komentaro pavyzdį.
+//Komentaro pavyzdys
+6. Parašykite pavadinimus šių konstantų:
+- konstanta, kuri perkelia output'ą į naują eilutę terminale.
+- konstanta, kurios reikšmė yra simbolis, naudojamas atskirti katalogų ir failų pavadinimus. 
+Ji naudojama aprašant failų kelius (file path). Šios konstantos reikšmė skiriasi priklausomai nuo operacinės sistemos.
+
+7. Parašykite bent 4 duomenų tipus, naudojamus PHP kalboje.
+Objektai, Masyvai, "Stringai", "Integer'iai".
+8. Paminėkite pagrindinį enumeratyvaus masyvo (indexed array) požymį, kuriuo jis skiriasi nuo asociatyvaus.
+Skaičiai
+9. Turite kintamajį $someVariable = '15'. Pakeiskite jo tipą į 'int'.
+$int_value = (int) $string;
+10. Kokia funkcija naudojama gauti masyvo narių skaičiui?
+Count() funkcija
+11. Kas nutinka, kai bandome sukurti masyvą, kuris turi kelis narius, kurių raktai (keys) sutampa?
+bus paimtas tik paskutinis
+12. Parašykite multidimensinio masyvo pavyzdį.
+$cars = array (
+  array("Volvo",22,18),
+  array("BMW",15,13),
+  array("Saab",5,2),
+  array("Land Rover",17,15)
+);
+13. Koks operatorius yra naudojamas pridėti naują narį masyvui? Pateikite paprastą pavyzdį.
+Aritmetinis. $x + $y
+14. Kokia funkcija naudojama panaikinti masyvo nariui?
+unset()
+15. Kokia funkciją naudotumėte pašalinti nereikalingus simbolius nuo string tipo reikšmės pradžios ir pabaigos (pvz. "-test-" -> "test")?
+
+16. Kuo skiriasi dvigubos ir viengubos kabutės? Įvardinkite pagrindinį skirtumą.
+Skirtos išvesti tekstą, bet ne kintamuosius kurie yra nustatyti. Viengubomis kabutės nėra skirtos apdoroti kažkokių duomenų.
+17. Kas laikoma superglobaliame kintamajame $_POST?
+Masyve laikorni kintamieji, skriptui perduoti POST metodu.
+18. Kuo skiriasi abstrakti klasė nuo įprastos? Įvardinkite du pagrindinius skirtumus/ypatybes.
+Abstarkčios klasės naudojamos išplėsti kitoms klasėms. Paprastai skaitomos ir naudojamos paslėpti mažesnes detales.
+19. Kokie yra PHP metodų/savybių matomumo lygiai? Trumpai juos aprašykite.
+Public, protected arba private. Public tipo metodai ir kintamieji gali būti pasiekiami iš bet kur. 
+Protected tuo tarpu gali pasiekti tik tėvinė ir vaiko klasė. Private leidžia pasiekti metodus ir kintamuosius tik tai klasei, 
+kuriai jie priklauso.
+20. Kokia yra keyword'o 'break' paskirtis? Kur jis dažniausiai naudojamas?
+Norint nutraukti ciklo darbą.
+2ą. Kokia yra keyword'o 'continue' paskirtis? Kur jis dažniausiai naudojamas?
+Nutraukia vieną ciklą, ir jei sąlyga tenkinama toliau skaičiuojama.
+21. Įvardinkite jums žinomas su slaptažodžių hash'avimu susijusias PHP funkcijas. Trumpai paaiškinkite, kokia yra jų paskirtis.
+password_hash(), crypt().
+22. Kuo skiriasi abstrakti klasė nuo įprastos? Įvardinkite du pagrindinius skirtumus/savybes.
+Abstarkčios klasės naudojamos išplėsti kitoms klasėms. Paprastai skaitomos ir naudojamos paslėpti mažesnes detales.
+23. Kokie yra PHP metodų/savybių matomumo lygiai. Trumpai juos aprašykite.
+Public, protected arba private. Public tipo metodai ir kintamieji gali būti pasiekiami iš bet kur. 
+Protected tuo tarpu gali pasiekti tik tėvinė ir vaiko klasė. Private leidžia pasiekti metodus ir kintamuosius tik tai klasei, 
+kuriai jie priklauso.
+24. Kokia yra keyword’o “break” paskirtis? Kur jis dažniausiai naudojamas?
+Norint nutraukti ciklo darbą.
+25. Kokia yra keyword’o “continue” paskirtis? Kur jis dažniausiai yra naudojamas?
+Nutraukia vieną ciklą, ir jei sąlyga tenkinama toliau skaičiuojama.
+26. Įvardinkinte jums žinomas su slaptažodžių hash’avimu susijusias PHP funkcijas. Trumpai paaiškinkite kokia yra jų paskirtis.
+password_hash(), crypt().
+27. Kas yra interfeisas? Trumpai apibūdinkite kam jis yra skirtas.
+inretfeisas naudojamas sąsajoms kurti. Dėka jų galima leisti vienodai naudoti skirtingas klases. Interfeisas yra struktūra, 
+apibrėžianti metodų sąrašą, kurie egzistuoja klasėje.
+28. Kas yra extendinama, o kas implementuojama?
+Klasės exstendinamos. Implementuoja interfeisus.
+29. Kuo skiriasi klasės statinis kintamasis nuo klasės konstantos?
+
+30. Kokius metodus abstrakčioje klasėje padarome abstrakčiais?
+
+31. Parašykite keletą pavydžių kaip gali būti aprašyta konstanta ir ji iškviesta?
+<?php
+class Goodbye {
+  const LEAVING_MESSAGE = "Thank you for visiting W3Schools.com!";
+}
+
+echo Goodbye::LEAVING_MESSAGE;
+?>
+32. Kada yra naudojama static žodelis?
+Klasės ypatybes ar metodus paskelbus static, jie tampa prieinami be klasės egzempliorių.
+33. Kaip yra objektas perduodas į metodą?
+$arr = (array) $obj;
+34. Kas yra composer?
+PHP valdymo įrankis, kuris leidžia naudoti bibliotekas, nuo kurių priklauso jūsų projektas, ir tvarkys (įdiegs / atnaujins) jas už jus.
+35. Parašykite komandas kurias naudosite su composeriu norėdami jį sukonfiguroti, kažką parsisiųsti ir jei reikia atnaujinti.
+php bin/composer; mv composer.phar /usr/local/bin/composer; composer update.
+36. Kas yra dependency injections?
+
+37. Kuo yra gerai MPA?
+
+38. Kam yra skirtas try ir catch blokas? Parašykite pavyzdį
+<?php
+//trigger exception in a "try" block
+try {
+  checkNum(2);
+  //If the exception is thrown, this text will not be shown
+  echo 'If you see this, the number is 1 or below';
+}
+
+//catch exception
+catch(Exception $e) {
+  echo 'Message: ' .$e->getMessage();
+}
+?>
+39. Ar galima klasės konstantas pasiekti globaliame lygyje?
+Ne
+40. Kaip vadinasi klasė turinti statinį metodą? Parašykite pavyzdį
+
+41. Ar protected metodas gali būti pasiekiamas globaliame lygyje?
+Taip
